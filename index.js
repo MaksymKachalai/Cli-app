@@ -26,7 +26,7 @@ function invokeAction({ action, id, name, email, phone }) {
 
     case "add":
       contacts.addContact(name, email, phone);
-      console.log(`${name} added succesfully`);
+      console.log(`${name} added succesfully`, {name, email, phone});
       break;
 
     case "remove":
